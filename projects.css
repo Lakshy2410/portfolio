@@ -1,5 +1,4 @@
-
-        :root {
+:root {
             --farbe-hintergrund: #0a0a0a;
             --farbe-karte: #161616;
             --farbe-blau: #0070f3;
@@ -222,3 +221,7 @@
             h1 { font-size: 2rem; }
             .project-grid { grid-template-columns: 1fr; }
         }
+        a{
+    text-decoration: none;
+    color: inherit;
+}
