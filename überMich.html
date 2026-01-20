@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Kontakt | Lakshy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --farbe-hintergrund: #0a0a0a;
+            --farbe-karte: #161616;
+            --farbe-blau: #0070f3;
+            --farbe-weiss: #ffffff;
+            --farbe-grau: #888888;
+            --transition: 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--farbe-hintergrund);
+            color: var(--farbe-weiss);
+            font-family: 'Inter', sans-serif;
+            padding: 60px 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .nav-back {
+            margin-bottom: 40px;
+        }
+
+        .nav-back a {
+            color: var(--farbe-grau);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-back a:hover {
+            color: var(--farbe-blau);
+        }
+
+        h1 {
+            font-family: 'Sora', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .main-card {
+            background: var(--farbe-karte);
+            border: 1px solid #1f1f1f;
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 24px;
+        }
+
+        .main-card p {
+            font-size: 1.25rem;
+            color: #b0b0b0;
+            max-width: 650px;
+        }
+
+        .highlight {
+            color: var(--farbe-weiss);
+            font-weight: 600;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: var(--farbe-karte);
+            border: 1px solid #1f1f1f;
+            border-radius: 24px;
+            padding: 30px;
+        }
+
+        .skill-card h3 {
+            font-family: 'Sora', sans-serif;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: #999;
+            font-size: 1.1rem;
+        }
+
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+
+        .dot-blue { background: var(--farbe-blau); }
+        .dot-gray { background: #333; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .main-card { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← ZURÜCK</a>
+        </div>
+
+        <h1>Skills & <span style="color: var(--farbe-blau);">Fokus.</span></h1>
+
+        <div class="main-card">
+            <p>
+                Ich bin <span class="highlight">Lakshy</span>, 15 Jahre alt und gehe in Hamburg zur Schule. 
+                Ich baue am liebsten Webseiten, die clean aussehen und gut funktionieren. 
+                Gerade lerne ich viel dazu, um für mein <span class="highlight">Schülerpraktikum 2026</span> bereit zu sein.
+            </p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3 style="color: var(--farbe-blau);">Was ich schon kann</h3>
+                <ul class="skill-list">
+                    <li><div class="dot dot-blue"></div> Webseiten bauen (HTML & CSS)</li>
+                    <li><div class="dot dot-blue"></div> JavaScript Grundlagen</li>
+                    <li><div class="dot dot-blue"></div> Responsive Design (fürs Handy)</li>
+                    <li><div class="dot dot-blue"></div> UI/UX Basics</li>
+                    <li><div class="dot dot-blue"></div> Bento Layouts</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3 style="color: var(--farbe-grau);">Woran ich gerade arbeite</h3>
+                <ul class="skill-list">
+                    <li><div class="dot dot-gray"></div> Node.js & Backend</li>
+                    <li><div class="dot dot-gray"></div> Git & GitHub</li>
+                    <li><div class="dot dot-gray"></div> Bessere CSS Animationen</li>
+                    <li><div class="dot dot-gray"></div> Projekt-Planung</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

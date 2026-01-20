@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Lakshy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← ZURÜCK</a>
+        </div>
+
+        <h1>Lass uns <span style="color: var(--farbe-blau);">reden.</span></h1>
+
+        <div class="info-card">
+            <h2>Praktikum 2026</h2>
+            <p>
+                Ich suche aktuell nach einem Platz für mein Schülerpraktikum im Zeitraum vom 
+                <span class="highlight">15.06. bis zum 03.07.2026</span>. Wenn Sie einen motivierten 
+                Schüler suchen, der Lust</span> auf Webdesign und Coding hat, bin ich der Richtige.
+            </p>
+        </div>
+
+        <div class="contact-section">
+            <div class="email-box">
+                <span class="email-subtext">Direkter Kontakt</span>
+                <span class="email-display" id="emailAddr">talwarlakshy5@gmail.com</span>
+            </div>
+            
+            <div class="button-group">
+                <a href="mailto:talwarlakshy5@gmail.com" class="btn btn-primary">
+                    E-Mail senden
+                </a>
+                <button onclick="copyToClipboard()" class="btn btn-secondary">
+                    Adresse kopieren
+                </button>
+            </div>
+        </div>
+    </div>
+     <footer>
+        <p> ©2025 Lakshy. Gebaut in Hamburg</p>
+        <a href="index.html"><p>Home</p></a>
+    </footer>
+
+    <div id="toast">E-Mail Adresse kopiert!</div>
+
+    <script>
+        function copyToClipboard() {
+            
+            const email = "talwarlakshy5@gmail.com";
+            const el = document.createElement('textarea');
+            el.value = email;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            const toast = document.getElementById('toast');
+            toast.style.opacity = '1';
+            toast.style.transform = 'translateX(-50%) translateY(-10px)';
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateX(-50%) translateY(0)';
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>

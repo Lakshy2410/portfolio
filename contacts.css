@@ -1,0 +1,180 @@
+ :root {
+            --farbe-hintergrund: #0a0a0a;
+            --farbe-karte: #161616;
+            --farbe-akzent-hintergrund: #0d0d0d;
+            --farbe-blau: #0070f3;
+            --farbe-weiss: #ffffff;
+            --farbe-grau: #888888;
+            --transition: 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--farbe-hintergrund);
+            color: var(--farbe-weiss);
+            font-family: 'Inter', sans-serif;
+            padding: 60px 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .nav-back {
+            margin-bottom: 40px;
+        }
+
+        .nav-back a {
+            color: var(--farbe-grau);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 100;
+            transition: var(--transition);
+        }
+
+        .nav-back a:hover {
+            color: var(--farbe-blau);
+        }
+
+        h1 {
+            font-family: 'Sora', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+        .info-card {
+            background: var(--farbe-karte);
+            border: 1px solid #1f1f1f;
+            border-radius: 24px;
+            padding: 35px;
+            margin-bottom: 24px;
+        }
+
+        .info-card h2 {
+            font-family: 'Sora', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--farbe-blau);
+        }
+
+        .info-card p {
+            font-size: 20px;
+            color: #b0b0b0;
+            font-weight: 100;
+        }
+
+        .highlight {
+            color: var(--farbe-weiss);
+            font-weight: 100;
+        }
+
+        .contact-section {
+            background: var(--farbe-karte);
+            border: 1px solid #1f1f1f;
+            border-radius: 24px;
+            padding: 24px;
+        }
+
+        .email-box {
+            background: var(--farbe-akzent-hintergrund);
+            border: 1px dashed #333;
+            border-radius: 20px;
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .email-display {
+            font-family: 'Sora', sans-serif;
+            font-size: clamp(1.1rem, 4.5vw, 1.6rem);
+            font-weight: 100;
+            color: var(--farbe-weiss);
+            display: block;
+            word-break: break-all;
+            margin-bottom: 10px;
+        }
+
+        .email-subtext {
+            color: var(--farbe-grau);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            flex: 1;
+            min-width: 200px;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background: var(--farbe-blau);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #1a1a1a;
+            color: #eee;
+            border: 1px solid #333;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        #toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--farbe-blau);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.3s, transform 0.3s;
+            pointer-events: none;
+            z-index: 100;
+        }
+        footer p{
+        width: 100%;
+        text-align: center;
+        }
+        p{
+        color: #a1a1a1;
+        font-family: "Inter";
+        font-size: 20px;
+        font-weight: 100;
+        }
+        a{
+        text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .button-group { flex-direction: column; }
+            .btn { width: 100%; }
+        }

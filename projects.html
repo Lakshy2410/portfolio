@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekte | Lakshy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <div class="nav-back">
+            <a href="index.html">← ZURÜCK</a>
+        </div>
+
+        <h1>Meine <span style="color: var(--farbe-blau);">Projekte.</span></h1>
+
+        <div class="main-card">
+            <p>
+                <span class="highlight">Dieses Portfolio</span> habe ich komplett selbst 
+                geschrieben und gestaltet. Es ist einer meiner besten Werke bisher.
+            </p>
+        </div>
+
+        <div class="sort-buttons">
+            <button class="sort-btn active" data-filter="all">Alle anzeigen</button>
+            <button class="sort-btn" data-filter="design">Design & Styling</button>
+            <button class="sort-btn" data-filter="nodejs">Node.js Kleinprojekte</button>
+        </div>
+
+        <div class="section-title">Design & Styling</div>
+        <div class="project-grid">
+            <div class="project-card" data-category="design">
+                <h3>Gaming Store UI</h3>
+                <p>Ein Konzept für einen Game-Shop. Hier ging es mir nur um das Aussehen, die Farben und wie sich alles anfühlt.</p>
+                <span class="badge">Frontend pur</span>
+            </div>
+            <div class="project-card" data-category="design">
+                <h3>Music Player Concept</h3>
+                <p>Ein cleaner Musik-Player. Kein echter Player, sondern eine Übung für perfekte Abstände und modernes UI.</p>
+                <span class="badge">Frontend pur</span>
+            </div>
+        </div>
+
+        <div class="section-title">Node.js Kleinprojekte</div>
+        <div class="small-grid">
+            <div class="project-card" data-category="nodejs">
+                <h3>File Sorter</h3>
+                <p>Sortiert automatisch meine Dateien in Ordner.</p>
+            </div>
+            <div class="project-card" data-category="nodejs">
+                <h3>Weather App</h3>
+                <p>Wetterbericht direkt im Terminal checken.</p>
+            </div>
+            <div class="project-card" data-category="nodejs">
+                <h3>Auto Tasks</h3>
+                <p>Skript für tägliche Routinen am PC.</p>
+            </div>
+            <div class="project-card" data-category="nodejs">
+                <h3>System Info</h3>
+                <p>Checkt meine PC-Werte schnell ab.</p>
+            </div>
+        </div>
+    </div>
+    <script src="projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+html{
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+p{
+    color: #a1a1a1;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: lighter;
+}
+li{
+    color: #a1a1a1;
+}
+footer p{
+    width: 100%;
+    text-align: center;
+}
+.grid-item-ueber-mich {
+    grid-column: 1 / span 2;
+}
+
+#über-mich{
+    margin-bottom: 1px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+header {
+    margin-left: 5%;
+}
+button{
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 15px 20px;
+    border: 1px solid #e0e0e0;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 17px;
+}
+button:hover{
+    background-color: #e0e0e0;
+    color: #050505;
+} 
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+section{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(22, 22, 22, 0.7);
+    transition: 
+        transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+        background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+        border-color 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+        box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section:hover {
+    transform: translateY(-10px) scale(1.01);
+    background-color: #1c1c1c;
+    border-color: #0070f3;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 15px rgba(0, 112, 243, 0.1);
+}
+#projekte{
+    grid-column: 1 / span 1;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 10%;
+}
+.skill{
+    display: inline-block;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2{
+    font-family: "Sora", sans-serif;
+}
+#kontakt{
+    grid-column: span 1;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10%;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-color: #333;
+}
+.blue{
+    color: #3b82f6;
+}
+
+.arrow-link:hover {
+    color: #3b82f6;
+}
+.arrow-link{
+    color: #3b82f6;
+    margin-top: 15px;
+    display: inline-block;
+    color: #0070f3;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+.section:hover .arrow-link {
+    transform: translateX(5px);
+}
+h2{
+    font-size: 40px;
+    padding: 0px;
+    margin-bottom: 0;
+}
+.intro-text{
+    width: 60%;
+}
